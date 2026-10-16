@@ -1,0 +1,830 @@
+{
+ "zoneSize": [
+  1000,
+  667
+ ],
+ "zones": [
+  {
+   "uiMapId": 1411,
+   "areaId": 14,
+   "name": "Durotar",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 6257,
+   "image": "maps/1411.webp",
+   "rect": [
+    0.5171,
+    0.44803,
+    0.66078,
+    0.59171
+   ]
+  },
+  {
+   "uiMapId": 1412,
+   "areaId": 215,
+   "name": "Mulgore",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 4491,
+   "image": "maps/1412.webp",
+   "rect": [
+    0.3964,
+    0.51087,
+    0.56363,
+    0.67807
+   ]
+  },
+  {
+   "uiMapId": 1413,
+   "areaId": 17,
+   "name": "The Barrens",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 9144,
+   "image": "maps/1413.webp",
+   "rect": [
+    0.39249,
+    0.45601,
+    0.66786,
+    0.7314
+   ]
+  },
+  {
+   "uiMapId": 1416,
+   "areaId": 36,
+   "name": "Alterac Mountains",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2870,
+   "image": "maps/1416.webp",
+   "rect": [
+    0.43229,
+    0.25426,
+    0.51184,
+    0.3338
+   ]
+  },
+  {
+   "uiMapId": 1417,
+   "areaId": 45,
+   "name": "Arathi Highlands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 4426,
+   "image": "maps/1417.webp",
+   "rect": [
+    0.47917,
+    0.32386,
+    0.58144,
+    0.42613
+   ]
+  },
+  {
+   "uiMapId": 1418,
+   "areaId": 3,
+   "name": "Badlands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2157,
+   "image": "maps/1418.webp",
+   "rect": [
+    0.51361,
+    0.56916,
+    0.58428,
+    0.63982
+   ]
+  },
+  {
+   "uiMapId": 1419,
+   "areaId": 4,
+   "name": "Blasted Lands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2232,
+   "image": "maps/1419.webp",
+   "rect": [
+    0.48982,
+    0.76847,
+    0.58499,
+    0.86364
+   ]
+  },
+  {
+   "uiMapId": 1420,
+   "areaId": 85,
+   "name": "Tirisfal Glades",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 8593,
+   "image": "maps/1420.webp",
+   "rect": [
+    0.36837,
+    0.15465,
+    0.49675,
+    0.28302
+   ]
+  },
+  {
+   "uiMapId": 1421,
+   "areaId": 130,
+   "name": "Silverpine Forest",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2598,
+   "image": "maps/1421.webp",
+   "rect": [
+    0.35654,
+    0.24716,
+    0.47585,
+    0.36648
+   ]
+  },
+  {
+   "uiMapId": 1422,
+   "areaId": 28,
+   "name": "Western Plaguelands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2213,
+   "image": "maps/1422.webp",
+   "rect": [
+    0.44271,
+    0.17471,
+    0.56487,
+    0.29687
+   ]
+  },
+  {
+   "uiMapId": 1423,
+   "areaId": 139,
+   "name": "Eastern Plaguelands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 4505,
+   "image": "maps/1423.webp",
+   "rect": [
+    0.51864,
+    0.16086,
+    0.64086,
+    0.28302
+   ]
+  },
+  {
+   "uiMapId": 1424,
+   "areaId": 267,
+   "name": "Hillsbrad Foothills",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3071,
+   "image": "maps/1424.webp",
+   "rect": [
+    0.42424,
+    0.30113,
+    0.51515,
+    0.39204
+   ]
+  },
+  {
+   "uiMapId": 1425,
+   "areaId": 47,
+   "name": "The Hinterlands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3847,
+   "image": "maps/1425.webp",
+   "rect": [
+    0.49929,
+    0.25568,
+    0.60867,
+    0.36506
+   ]
+  },
+  {
+   "uiMapId": 1426,
+   "areaId": 1,
+   "name": "Dun Morogh",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 1295,
+   "image": "maps/1426.webp",
+   "rect": [
+    0.40335,
+    0.4834,
+    0.54327,
+    0.62331
+   ]
+  },
+  {
+   "uiMapId": 1427,
+   "areaId": 51,
+   "name": "Searing Gorge",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 1940,
+   "image": "maps/1427.webp",
+   "rect": [
+    0.46372,
+    0.57812,
+    0.52711,
+    0.64151
+   ]
+  },
+  {
+   "uiMapId": 1428,
+   "areaId": 46,
+   "name": "Burning Steppes",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3088,
+   "image": "maps/1428.webp",
+   "rect": [
+    0.46212,
+    0.61781,
+    0.54534,
+    0.70099
+   ]
+  },
+  {
+   "uiMapId": 1429,
+   "areaId": 12,
+   "name": "Elwynn Forest",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 4551,
+   "image": "maps/1429.webp",
+   "rect": [
+    0.41093,
+    0.65652,
+    0.50953,
+    0.75515
+   ]
+  },
+  {
+   "uiMapId": 1430,
+   "areaId": 41,
+   "name": "Deadwind Pass",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 148,
+   "image": "maps/1430.webp",
+   "rect": [
+    0.47822,
+    0.73864,
+    0.54924,
+    0.80966
+   ]
+  },
+  {
+   "uiMapId": 1431,
+   "areaId": 10,
+   "name": "Duskwood",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3791,
+   "image": "maps/1431.webp",
+   "rect": [
+    0.43087,
+    0.73224,
+    0.50758,
+    0.80895
+   ]
+  },
+  {
+   "uiMapId": 1432,
+   "areaId": 38,
+   "name": "Loch Modan",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3251,
+   "image": "maps/1432.webp",
+   "rect": [
+    0.51119,
+    0.50941,
+    0.58955,
+    0.5878
+   ]
+  },
+  {
+   "uiMapId": 1433,
+   "areaId": 44,
+   "name": "Redridge Mountains",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2993,
+   "image": "maps/1433.webp",
+   "rect": [
+    0.50231,
+    0.68359,
+    0.56398,
+    0.74529
+   ]
+  },
+  {
+   "uiMapId": 1434,
+   "areaId": 33,
+   "name": "Stranglethorn Vale",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 5331,
+   "image": "maps/1434.webp",
+   "rect": [
+    0.39145,
+    0.79412,
+    0.57274,
+    0.97541
+   ]
+  },
+  {
+   "uiMapId": 1435,
+   "areaId": 8,
+   "name": "Swamp of Sorrows",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3200,
+   "image": "maps/1435.webp",
+   "rect": [
+    0.5177,
+    0.72816,
+    0.58286,
+    0.79332
+   ]
+  },
+  {
+   "uiMapId": 1436,
+   "areaId": 40,
+   "name": "Westfall",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 4121,
+   "image": "maps/1436.webp",
+   "rect": [
+    0.36885,
+    0.71875,
+    0.46828,
+    0.81818
+   ]
+  },
+  {
+   "uiMapId": 1437,
+   "areaId": 11,
+   "name": "Wetlands",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 5329,
+   "image": "maps/1437.webp",
+   "rect": [
+    0.46561,
+    0.40971,
+    0.5831,
+    0.52716
+   ]
+  },
+  {
+   "uiMapId": 1438,
+   "areaId": 141,
+   "name": "Teldrassil",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 4039,
+   "image": "maps/1438.webp",
+   "rect": [
+    0.36011,
+    0.03948,
+    0.49847,
+    0.17782
+   ]
+  },
+  {
+   "uiMapId": 1439,
+   "areaId": 148,
+   "name": "Darkshore",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 3321,
+   "image": "maps/1439.webp",
+   "rect": [
+    0.38383,
+    0.18206,
+    0.56182,
+    0.36005
+   ]
+  },
+  {
+   "uiMapId": 1440,
+   "areaId": 331,
+   "name": "Ashenvale",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 4834,
+   "image": "maps/1440.webp",
+   "rect": [
+    0.41757,
+    0.33126,
+    0.57428,
+    0.48794
+   ]
+  },
+  {
+   "uiMapId": 1441,
+   "areaId": 400,
+   "name": "Thousand Needles",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2829,
+   "image": "maps/1441.webp",
+   "rect": [
+    0.47554,
+    0.68342,
+    0.59511,
+    0.80299
+   ]
+  },
+  {
+   "uiMapId": 1442,
+   "areaId": 406,
+   "name": "Stonetalon Mountains",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2378,
+   "image": "maps/1442.webp",
+   "rect": [
+    0.37557,
+    0.40285,
+    0.50827,
+    0.53558
+   ]
+  },
+  {
+   "uiMapId": 1443,
+   "areaId": 405,
+   "name": "Desolace",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 4048,
+   "image": "maps/1443.webp",
+   "rect": [
+    0.34873,
+    0.50331,
+    0.4709,
+    0.62551
+   ]
+  },
+  {
+   "uiMapId": 1444,
+   "areaId": 357,
+   "name": "Feralas",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 3210,
+   "image": "maps/1444.webp",
+   "rect": [
+    0.3159,
+    0.61821,
+    0.50476,
+    0.80707
+   ]
+  },
+  {
+   "uiMapId": 1445,
+   "areaId": 15,
+   "name": "Dustwallow Marsh",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2857,
+   "image": "maps/1445.webp",
+   "rect": [
+    0.49026,
+    0.60462,
+    0.63293,
+    0.74728
+   ]
+  },
+  {
+   "uiMapId": 1446,
+   "areaId": 440,
+   "name": "Tanaris",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 3134,
+   "image": "maps/1446.webp",
+   "rect": [
+    0.46971,
+    0.76121,
+    0.65721,
+    0.94871
+   ]
+  },
+  {
+   "uiMapId": 1447,
+   "areaId": 16,
+   "name": "Azshara",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2873,
+   "image": "maps/1447.webp",
+   "rect": [
+    0.55282,
+    0.30401,
+    0.69062,
+    0.44183
+   ]
+  },
+  {
+   "uiMapId": 1448,
+   "areaId": 361,
+   "name": "Felwood",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 1674,
+   "image": "maps/1448.webp",
+   "rect": [
+    0.41916,
+    0.23098,
+    0.57541,
+    0.38723
+   ]
+  },
+  {
+   "uiMapId": 1449,
+   "areaId": 490,
+   "name": "Un'Goro Crater",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 3687,
+   "image": "maps/1449.webp",
+   "rect": [
+    0.44928,
+    0.76495,
+    0.54982,
+    0.86549
+   ]
+  },
+  {
+   "uiMapId": 1450,
+   "areaId": 493,
+   "name": "Moonglade",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 821,
+   "image": "maps/1450.webp",
+   "rect": [
+    0.5013,
+    0.17561,
+    0.56403,
+    0.23836
+   ]
+  },
+  {
+   "uiMapId": 1451,
+   "areaId": 1377,
+   "name": "Silithus",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2883,
+   "image": "maps/1451.webp",
+   "rect": [
+    0.39481,
+    0.76461,
+    0.48947,
+    0.85929
+   ]
+  },
+  {
+   "uiMapId": 1452,
+   "areaId": 618,
+   "name": "Winterspring",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2716,
+   "image": "maps/1452.webp",
+   "rect": [
+    0.47237,
+    0.17391,
+    0.66531,
+    0.36685
+   ]
+  },
+  {
+   "uiMapId": 1453,
+   "areaId": 1519,
+   "name": "Stormwind City",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 3490,
+   "image": "maps/1453.webp",
+   "rect": [
+    0.4056,
+    0.65891,
+    0.45496,
+    0.70827
+   ]
+  },
+  {
+   "uiMapId": 1454,
+   "areaId": 1637,
+   "name": "Orgrimmar",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 2736,
+   "image": "maps/1454.webp",
+   "rect": [
+    0.56379,
+    0.42905,
+    0.6019,
+    0.46718
+   ]
+  },
+  {
+   "uiMapId": 1455,
+   "areaId": 1537,
+   "name": "Ironforge",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2119,
+   "image": "maps/1455.webp",
+   "rect": [
+    0.47482,
+    0.51289,
+    0.49728,
+    0.53538
+   ]
+  },
+  {
+   "uiMapId": 1456,
+   "areaId": 1638,
+   "name": "Thunder Bluff",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 1434,
+   "image": "maps/1456.webp",
+   "rect": [
+    0.44973,
+    0.55638,
+    0.47809,
+    0.58475
+   ]
+  },
+  {
+   "uiMapId": 1457,
+   "areaId": 1657,
+   "name": "Darnassus",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 1555,
+   "image": "maps/1457.webp",
+   "rect": [
+    0.38392,
+    0.10441,
+    0.41268,
+    0.13318
+   ]
+  },
+  {
+   "uiMapId": 1458,
+   "areaId": 1497,
+   "name": "Undercity",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 2353,
+   "image": "maps/1458.webp",
+   "rect": [
+    0.42974,
+    0.23815,
+    0.457,
+    0.26543
+   ]
+  },
+  {
+   "uiMapId": 1459,
+   "areaId": 2597,
+   "name": "Alterac Valley",
+   "parent": 1424,
+   "continent": null,
+   "points": 1983,
+   "image": "maps/1459.webp",
+   "rect": null
+  },
+  {
+   "uiMapId": 1460,
+   "areaId": 3277,
+   "name": "Warsong Gulch",
+   "parent": 1413,
+   "continent": null,
+   "points": 2,
+   "image": null,
+   "rect": null
+  },
+  {
+   "uiMapId": 1461,
+   "areaId": 3358,
+   "name": "Arathi Basin",
+   "parent": 1417,
+   "continent": null,
+   "points": 379,
+   "image": "maps/1461.webp",
+   "rect": null
+  },
+  {
+   "uiMapId": 2482,
+   "areaId": 616,
+   "name": "Mount Hyjal",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 167,
+   "image": "maps/2482.webp",
+   "rect": [
+    0.48885,
+    0.26477,
+    0.58322,
+    0.35912
+   ]
+  },
+  {
+   "uiMapId": 2521,
+   "areaId": 16593,
+   "name": "Zephras Isle",
+   "parent": 947,
+   "continent": null,
+   "points": 36912,
+   "image": "maps/2521.webp",
+   "rect": null
+  },
+  {
+   "uiMapId": 2524,
+   "areaId": 16606,
+   "name": "Darkspear Islands",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 0,
+   "image": null,
+   "rect": [
+    0.38445,
+    0.50348,
+    0.43676,
+    0.55579
+   ]
+  },
+  {
+   "uiMapId": 2548,
+   "areaId": 16591,
+   "name": "Riverglades",
+   "parent": 1415,
+   "continent": "Eastern Kingdoms",
+   "points": 546,
+   "image": "maps/2548.webp",
+   "rect": [
+    0.50829,
+    0.59375,
+    0.64607,
+    0.73153
+   ]
+  },
+  {
+   "uiMapId": 2652,
+   "areaId": 16651,
+   "name": "Shen'dralas",
+   "parent": 1414,
+   "continent": "Kalimdor",
+   "points": 63,
+   "image": "maps/2652.webp",
+   "rect": [
+    0.40874,
+    0.59918,
+    0.46445,
+    0.65489
+   ]
+  }
+ ],
+ "continents": [
+  {
+   "uiMapId": 1414,
+   "name": "Kalimdor",
+   "image": "maps/1414.webp",
+   "crop": [
+    0.2959,
+    0.01948,
+    0.71062,
+    0.96871
+   ],
+   "size": [
+    917,
+    1400
+   ]
+  },
+  {
+   "uiMapId": 1415,
+   "name": "Eastern Kingdoms",
+   "image": "maps/1415.webp",
+   "crop": [
+    0.33654,
+    0.13465,
+    0.66607,
+    0.99541
+   ],
+   "size": [
+    803,
+    1400
+   ]
+  }
+ ]
+}

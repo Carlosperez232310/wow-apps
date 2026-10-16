@@ -1,0 +1,16 @@
+{
+  "name": "Forever Hunter — WoW: Forever companion",
+  "short_name": "Forever Hunter",
+  "description": "Quest map and beast Pokédex for a WoW: Forever Hunter.",
+  "start_url": "./#quests",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14110d",
+  "theme_color": "#1a150f",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
