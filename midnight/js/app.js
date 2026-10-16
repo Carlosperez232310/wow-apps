@@ -5,10 +5,11 @@ import { MapView } from './mapview.js';
 import { QuestMap } from './questmap.js';
 import { SpecsView } from './specs.js';
 import { FishingView } from './fishing.js';
+import { TreasureView } from './treasure.js';
 import { FormsView } from './forms.js';
 import { DruidView } from './druid.js';
 
-const files = ['quests', 'zones', 'specs', 'fishing', 'forms', 'worgen', 'meta'];
+const files = ['quests', 'zones', 'specs', 'fishing', 'treasure', 'forms', 'worgen', 'meta'];
 async function loadData() {
   if (window.__DATA) return window.__DATA; // single-file offline build
   const out = {};
@@ -24,8 +25,9 @@ const app = {
     if (!Array.isArray(this.data.quests)) this.data.quests = this.data.quests.quests;
     this.mv = new MapView($('#map-holder'), this.data.zones, {});
     this.mv.map.attributionControl.setPrefix('Leaflet · schematic grid, coords from Wowhead');
-    this.fishing = new FishingView($('#view-fishing'), this.data, this);
+    this.fishing = new TreasureView($('#view-fishing'), this.data, this, FishingView);
     this.quests = new QuestMap($('#view-map'), this.data, this.mv, this);
+    this.fishing.bindLegend($('#view-map'), () => this.quests.drawMarkers());
     $('#map').replaceWith($('#map-holder')); $('#map-holder').removeAttribute('style'); $('#map-holder').id = 'map';
     this.specs = new SpecsView($('#view-specs'), this.data, this);
     this.forms = new FormsView($('#view-forms'), this.data, this);
@@ -38,6 +40,7 @@ const app = {
     this.pill();
     $('#loading')?.remove();
   },
+  mapView: 'map',
   go(view, push = true) {
     if (!VIEWS.includes(view)) view = 'map';
     $$('.view').forEach(v => v.classList.toggle('on', v.id === 'view-' + view));

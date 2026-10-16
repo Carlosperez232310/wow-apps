@@ -174,3 +174,21 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .plist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:13px}
 .fspot .kv{grid-template-columns:76px 1fr}
 .abil span b{color:var(--gold2)}
+/* Treasure & Fishing */
+.trhead{display:grid;gap:10px;margin-bottom:12px}
+.trhead h2{margin:0}
+.trhead #trFilters{display:grid;gap:8px}
+.trhead #trTypes{gap:6px;flex-wrap:wrap}
+.trlist{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr))}
+.trcard{display:flex;gap:12px;padding:12px;align-items:flex-start}
+.trcard .fg{font-size:26px;line-height:1;flex:none;width:34px;text-align:center}
+.trcard .body{flex:1;min-width:0;display:grid;gap:6px}
+.trcard h3{margin:0;font-size:15.5px;overflow-wrap:anywhere}
+.trcard.isdone{opacity:.62}
+.trcard .srcs{margin:0;padding-left:0;list-style:none;display:grid;gap:5px;font-size:13px}
+.trcard .srcs li{overflow-wrap:anywhere}
+.trcard .tip{margin:0;color:var(--muted)}
+.trcard pre.tt{white-space:pre-wrap;font:12px/1.4 inherit;margin:6px 0 0;color:var(--muted)}
+.btn.sm{padding:2px 8px;font-size:12px;min-height:0}
+.trmore{grid-column:1/-1;justify-self:center}
+.mk.tr{border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:10px;line-height:1;width:18px;height:18px}

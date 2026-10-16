@@ -30,6 +30,7 @@ export class DruidView {
     const ally = D.quests.filter(q => q.side !== 2);
     el.innerHTML = `<div class="row"><span class="pill">Gear quests done <b>${ally.filter(q => store.has('done', q.id)).length}</b> / ${ally.length}</span>
       <span class="pill">Forms collected <b>${D.forms.entries.filter(e => store.has('collected', e.id.slice(1))).length}</b> / ${D.forms.entries.length}</span>
+      <span class="pill">Treasure got <b>${store.count('got')}</b> / ${(D.treasure?.items || []).length}</span>
       <span class="pill">Pools &amp; fish <b>${store.count('fished')}</b> / ${D.fishing.pools.length + D.fishing.fish.length}</span>
       <span class="pill">Current spec <b>${esc(store.get().spec)}</b></span></div>`;
   }

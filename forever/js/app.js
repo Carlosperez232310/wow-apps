@@ -6,8 +6,9 @@ import { QuestView } from './quests.js';
 import { BeastView } from './beasts.js';
 import { SettingsView } from './settings.js';
 import { FishingView } from './fishing.js';
+import { TreasureView } from './treasure.js';
 
-const files = ['quests', 'beasts', 'families', 'foods', 'zones', 'meta', 'fishing'];
+const files = ['quests', 'beasts', 'families', 'foods', 'zones', 'meta', 'fishing', 'treasure'];
 
 async function loadData() {
   // Offline single-file build inlines everything as window.__DATA (no fetch under file://)
@@ -27,7 +28,8 @@ const app = {
     $('#map').replaceWith($('#map-holder')); $('#map-holder').removeAttribute('style'); $('#map-holder').id = 'map';
     this.mv.invalidate();
     this.beasts = new BeastView($('#view-beasts'), this.data, this);
-    this.fishing = new FishingView($('#view-fishing'), this.data, this);
+    this.fishing = new TreasureView($('#view-fishing'), this.data, this, FishingView);
+    this.fishing.bindLegend($('#view-quests'), () => this.quests.drawMarkers());
     this.settings = new SettingsView($('#view-settings'), this.data, this);
     this.quests.start(); this.beasts.refresh(); this.fishing.refresh();
     $$('.tabs button').forEach(b => b.onclick = () => this.go(b.dataset.view));
@@ -57,10 +59,12 @@ const app = {
     store.pref('fishLayer', true);
     for (const i of ['fLayer', 'mFish']) { const cb = document.getElementById(i); if (cb) cb.checked = true; }
     this.go('quests');
+    this.fishing.setMode('fishguide');
     this.quests.showMap(t.ui); this.quests.drawMarkers();
     if (t.x != null) { const ll = this.mv.project(t.ui, t.x, t.y); if (ll) this.mv.map.setView(ll, 1); }
     setTimeout(() => $('#map').scrollIntoView({ behavior: 'smooth' }), 60);
   },
+  mapView: 'quests',
   showBeastOnMap(b) { this.go('quests'); this.quests.setBeast(b); setTimeout(() => $('#map').scrollIntoView({ behavior: 'smooth' }), 60); },
 };
 

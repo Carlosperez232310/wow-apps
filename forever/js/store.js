@@ -1,7 +1,7 @@
 // Persistent user state (localStorage) + JSON export/import.
 import { GAME } from './config.js';
 
-const DEFAULT = { v: 1, race: 'tauren', done: {}, caught: {}, fished: {}, prefs: {} };
+const DEFAULT = { v: 1, race: 'tauren', done: {}, caught: {}, fished: {}, got: {}, prefs: {} };
 let state = load();
 const subs = new Set();
 
@@ -26,6 +26,8 @@ export const store = {
   toggleCaught(id, on = !state.caught[id]) { on ? (state.caught[id] = 1) : delete state.caught[id]; save(); },
   isFished: id => !!state.fished[id],
   toggleFished(id, on = !state.fished[id]) { state.fished ||= {}; on ? (state.fished[id] = 1) : delete state.fished[id]; save(); },
+  has: (b, id) => !!(state[b] || {})[id],
+  toggle(b, id, on = !store.has(b, id)) { state[b] ||= {}; on ? (state[b][id] = 1) : delete state[b][id]; save(); },
   exportJSON() {
     return JSON.stringify({ app: GAME.id, exported: new Date().toISOString(), ...state }, null, 1);
   },
@@ -34,7 +36,7 @@ export const store = {
     if (!d || typeof d !== 'object' || (d.app && d.app !== GAME.id)) throw new Error('Not a ' + GAME.title + ' progress file');
     const clean = (o, re = /^\d+$/) => Object.fromEntries(Object.entries(o || {}).filter(([k, v]) => re.test(k) && v).map(([k]) => [k, 1]));
     state = { ...DEFAULT, race: d.race || state.race, prefs: d.prefs || {}, done: clean(d.done), caught: clean(d.caught),
-      fished: clean(d.fished, /^[a-z]\d+(-\d+)?$/) };
+      fished: clean(d.fished, /^[a-z]\d+(-\d+)?$/), got: clean(d.got) };
     save();
   },
   reset() { state = structuredClone(DEFAULT); save(); },

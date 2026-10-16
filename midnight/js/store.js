@@ -1,8 +1,8 @@
 // Persistent user state (localStorage) + JSON export/import. Buckets: done (quests), collected (forms), fished (pools/fish).
 import { GAME } from './config.js';
 
-const BUCKETS = ['done', 'collected', 'fished'];
-const DEFAULT = { v: 1, spec: 'guardian', done: {}, collected: {}, fished: {}, prefs: {} };
+const BUCKETS = ['done', 'collected', 'fished', 'got'];
+const DEFAULT = { v: 1, spec: 'guardian', done: {}, collected: {}, fished: {}, got: {}, prefs: {} };
 let state = load();
 const subs = new Set();
 function load() {

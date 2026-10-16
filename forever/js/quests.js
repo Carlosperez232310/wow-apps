@@ -57,6 +57,8 @@ export class QuestView {
           <span><i class="mk fish" style="background:#2fd3a1;width:11px;height:11px"></i>Fishing</span>
           <label class="check small"><input type="checkbox" id="mFish" ${store.pref('fishLayer') ? 'checked' : ''}> Fishing layer</label>
           <label class="check small"><input type="checkbox" id="mFishV" ${store.pref('fishVendors') ? 'checked' : ''}> + pole vendors</label>
+          <label class="check small"><input type="checkbox" id="mLayer-fish" data-layer="fish" ${store.pref('trLayer') ? 'checked' : ''}><i class="mk tr" style="background:#ffd24a;width:11px;height:11px"></i> Treasure (fishing)</label>
+          <label class="check small"><input type="checkbox" id="mLayer-world" data-layer="world" ${store.pref('wtLayer') ? 'checked' : ''}><i class="mk tr" style="background:#ff6fb1;width:11px;height:11px"></i> World treasures</label>
           <span id="beastChip"></span></div>
       </section>
       <section class="listcol">

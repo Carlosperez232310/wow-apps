@@ -21,7 +21,9 @@ export class QuestMap {
         <div id="map"></div>
         <div class="maplegend">${Object.entries(QUEST_CATS).map(([k, c]) => `<span><i class="mk" style="background:${c.color}"></i>${c.short}</span>`).join('')}
           <span><i class="mk fish" style="background:#2ad1c9"></i>Fishing</span>
-          <label class="check small"><input type="checkbox" id="mFish" ${store.pref('fishLayer') ? 'checked' : ''}> Fishing layer</label></div>
+          <label class="check small"><input type="checkbox" id="mFish" ${store.pref('fishLayer') ? 'checked' : ''}> Fishing layer</label>
+          <label class="check small"><input type="checkbox" id="mLayer-fish" data-layer="fish" ${store.pref('trLayer') ? 'checked' : ''}><i class="mk tr" style="background:#ffd24a"></i> Treasure (fishing)</label>
+          <label class="check small"><input type="checkbox" id="mLayer-world" data-layer="world" ${store.pref('wtLayer') ? 'checked' : ''}><i class="mk tr" style="background:#ff6fb1"></i> World treasures</label></div>
         <p class="small">Schematic grid map (0–100 in-game coordinates); not Blizzard map art. Pins = quest givers from Wowhead's quest mapper.</p>
       </div>
       <div class="listcol">
@@ -118,6 +120,6 @@ export class QuestMap {
         popup: `<b>${esc(q.name)}</b><br>${esc(q.start.name || '')} ${coord(q.start.x, q.start.y)}<br>${q.items.map(i => `<span style="color:${qcol(i.quality)}">${esc(i.name)}</span>`).join('<br>')}<br><a href="${q.url}" target="_blank" rel="noopener">Wowhead ↗</a>` });
       this.markers.set(q.id, m);
     }
-    if (store.pref('fishLayer')) this.app.fishing?.drawLayer(this.mv);
+    this.app.fishing?.drawLayer(this.mv);
   }
 }

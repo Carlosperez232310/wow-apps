@@ -72,6 +72,6 @@ export class SettingsView {
   summary() {
     const s = store.get();
     const el = $('#progSummary', this.root);
-    if (el) el.textContent = `${Object.keys(s.done).length} quests done · ${Object.keys(s.caught).length} beasts caught · ${Object.keys(s.fished || {}).length} fishing spots fished`;
+    if (el) el.textContent = `${Object.keys(s.done).length} quests done · ${Object.keys(s.caught).length} beasts caught · ${Object.keys(s.fished || {}).length} fishing spots fished · ${Object.keys(s.got || {}).length} treasures got`;
   }
 }
